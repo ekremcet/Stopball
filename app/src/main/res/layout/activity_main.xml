@@ -1,0 +1,141 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context="ekremcetinkaya.stopball.MainActivity">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="00:00:00"
+        android:id="@+id/zaman"
+        android:textSize="60sp"
+        android:background="@drawable/textarka"
+        android:textColor="#ffffff"
+        android:padding="10dp"
+        android:shadowColor="#55DCE0"
+        android:shadowDx="0"
+        android:shadowDy="0"
+        android:shadowRadius="8"
+        android:layout_above="@+id/button"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="10dp" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/button"
+        android:textSize="21sp"
+        android:text="Dribble"
+        android:background="@drawable/shape"
+        android:textColor="#FFFFFF"
+        android:textStyle="bold"
+        android:typeface="sans"
+        android:textAppearance="@android:style/TextAppearance.Holo.WindowTitle"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:onClick="buttonOnClick" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="0"
+        android:id="@+id/player1"
+        android:textSize="120sp"
+        android:textColor="@color/accent_material_light"
+        android:layout_alignTop="@+id/oyuncu1"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_marginLeft="40dp"
+        android:layout_marginTop="10dp" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="0"
+        android:id="@+id/player2"
+        android:textSize="120sp"
+        android:textColor="@color/accent_material_dark"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginRight="50dp"
+        android:layout_marginTop="10dp" />
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/p1kart"
+        android:src="@drawable/yellow"
+        android:layout_below="@+id/player1"
+        android:layout_alignRight="@+id/player1"
+        android:layout_alignEnd="@+id/player1"
+        android:layout_alignLeft="@+id/player1"
+        android:layout_alignStart="@+id/oyuncu1" />
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/p2kart"
+        android:src="@drawable/yellow"
+        android:layout_alignRight="@+id/player2"
+        android:layout_alignEnd="@+id/oyuncu2"
+        android:layout_alignLeft="@+id/player2"
+        android:layout_alignStart="@+id/player2"
+        android:layout_below="@+id/player2" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Match is about to kick off"
+        android:id="@+id/sira"
+        android:textSize="25sp"
+        android:textColor="#04631a"
+        android:textStyle="bold"
+        android:layout_above="@+id/zaman"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="25dp"
+        android:layout_marginTop="10dp" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Player 1"
+        android:id="@+id/oyuncu1"
+        android:textSize="20sp"
+        android:layout_alignParentTop="true"
+        android:layout_alignStart="@+id/player1"
+        android:layout_marginLeft="-5dp"
+        android:layout_alignLeft="@+id/player1"
+        android:layout_alignRight="@+id/player1" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Player 2"
+        android:id="@+id/oyuncu2"
+        android:textSize="20sp"
+        android:layout_alignParentTop="true"
+        android:layout_alignRight="@+id/player2"
+        android:layout_alignEnd="@+id/player2"
+        android:layout_marginRight="-5dp"
+        android:layout_alignLeft="@+id/player2" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="First to score 3 goal wins, good luck !"
+        android:id="@+id/durum"
+        android:textColor="#095082"
+        android:textStyle="italic"
+        android:textSize="20sp"
+        android:layout_above="@+id/sira"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="5dp" />
+
+</RelativeLayout>

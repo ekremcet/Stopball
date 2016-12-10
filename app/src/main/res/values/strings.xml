@@ -1,0 +1,8 @@
+<resources>
+    <string name="app_name">Stopball</string>
+    <string name="start">Start</string>
+    <string name="stop">Stop</string>
+    <string name="maçdevam">Match is going on</string>
+    <string name="gol">GOOOAAL</string>
+    <string name="banner_ad_unit_id">ca-app-pub-3222072301625767/6690168739</string>
+</resources>
